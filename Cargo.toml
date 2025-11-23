@@ -1,0 +1,26 @@
+[package]
+name = "exocortex"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Async Runtime
+tokio = { version = "1.37", features = ["full"] }
+
+# Error Handling
+eyre = "0.6"
+tracing = "0.1"
+
+# Reth Framework Components
+# We lock all components to "v1.1.0" to ensure stability and working mining logic.
+reth = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
+reth-exex = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
+reth-node-ethereum = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
+reth-node-api = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
+reth-tracing = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
+reth-node-builder = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" } 
+futures = "0.3"
+
+[[bin]]
+name = "exocortex"
+path = "src/main.rs"
