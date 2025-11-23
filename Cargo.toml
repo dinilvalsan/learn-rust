@@ -18,8 +18,14 @@ reth-exex = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
 reth-node-ethereum = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
 reth-node-api = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
 reth-tracing = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
-reth-node-builder = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" } 
+reth-node-builder = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" }
+reth-primitives = { git = "https://github.com/paradigmxyz/reth", tag = "v1.1.0" } 
 futures = "0.3"
+
+# Alloy - The "Eyes" (Decoding)
+# We use alloy-sol-types for zero-copy ABI decoding
+alloy-sol-types = "0.7"
+alloy-primitives = "0.7" 
 
 [[bin]]
 name = "exocortex"
